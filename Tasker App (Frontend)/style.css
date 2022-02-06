@@ -1,0 +1,189 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: 'montserrat';
+    overflow-x: scroll;
+}
+
+#top{
+    background-color: black;
+    height: 37%;
+    color: white;
+    padding: 2% 23%;
+   
+}
+
+#icons{
+display: flex;
+  
+}
+
+#icons .box{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    border: solid 2px rgb(228, 225, 225);
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box i{
+    font-size: 22px;
+}
+
+i:hover{
+    cursor:pointer;
+    color: aqua;
+}
+i:hover .box{
+    border: solid 2px aqua;
+}
+
+
+#texticon span{
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 33px;
+}#modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99999;
+    width: 50%;
+    /* height: 50%; */
+    border-radius: 5px;
+    box-shadow: 0 0 0 2000px rgba(0,0,0,0.5);
+    background-color: rgb(0, 0, 0);
+    padding: 50px 20px;
+}
+
+#modal .cross{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    cursor: pointer;
+}
+
+#modal input[type="text"]{
+    padding: 11px 20px;
+    width: 100%;
+    display: block;
+    border: 1.3px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+#modal textarea{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border: 1.3px solid #e3e3e3;
+    border-radius: 4px;
+    height: 200px;
+    resize: none;
+    padding: 10px 20px;
+}
+
+#modal button{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px 22px;
+    background-color: black;
+    color: aqua;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: solid 1px white
+}
+
+#modal button:hover{
+    color: black;
+    background-color: aqua;
+}
+
+#remixiconclose{
+    color: white;
+    font-size: 30px;   
+}
+
+#remixiconclose:hover{
+    color: aqua;
+    cursor: pointer;
+
+}
+
+#date{
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+#upcoming{
+height: 32vh;
+width: 100%;
+background-color: white;
+border-bottom: solid 5px black;
+padding: 20px 50px;
+
+}
+
+#cardsupcoming{
+    height: 22vh;
+    width: 100%;
+    /* background-color: yellow; */
+    
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+   
+}
+
+.card{
+    height: 150px;
+    width: 150px;
+    /* background-color: orange; */
+    position: relative;
+    margin-right: 35px;
+    border-radius: 9px;
+    background-color: #f1f1f1;
+    padding: 10px;
+
+
+
+}
+#top p{
+    
+    font-size: 15px;
+}
+.card p{
+    font-size: 11px;
+    margin: 7px 0;
+}
+
+.card i{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: 20px;
+    color: rgb(99, 99, 99);
+}
+.card i:hover{
+    cursor: pointer;
+    color: black;
+}

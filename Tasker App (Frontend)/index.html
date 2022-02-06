@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Create and Manage Your To Do List!</title>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Create and Manage your To Do List With Ease!</h1>
+        <br>
+        <p>Do you have issues with organization? Do you find it tough to remember what all you have to do? Look no
+            further, because this website will help you organize all your tasks, date-wise. Just start adding tasks, and
+            you'll see the beauty of it. Your mind is blown, isn't it? You're welcome :) </p>
+
+        <div id="icons">
+            <div class="box" id="add"><i class="ri-add-line"></i></div>
+            <div class="box"> <i class="ri-delete-bin-line"></i></div>
+
+
+        </div>
+    <div id="texticon"><span>Add a Task</span><span>Delete All Tasks</span></div>
+    </div>
+    <div id="modal">
+        <span id="modalCross" class="cross">
+            <i id="remixiconclose" class="ri-close-circle-line"></i>
+        </span>
+        <input id="taskName" type="text" placeholder="Task Name">
+        <input type="date" name="" id="taskDate">
+        <textarea id="taskDetails" placeholder="Write your task here..."></textarea>
+        
+        <button id="taskDone">Save Task</button>
+    </div>
+    <div id="upcoming">
+     <h2>Upcoming Tasks</h2>
+     <div id="cardsupcoming">
+         <div class="card">         <i class="ri-close-circle-line"></i><h6>Finish Math Homework</h6><p>March 21st, 2022</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ducimus est dolores quae minus cumque.</p></div>
+    
+       
+     </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
